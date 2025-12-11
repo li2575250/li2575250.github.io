@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>联系我们 - 浙江华昇特材有限公司</title>
+    <meta name="description" content="浙江华昇特材有限公司联系方式，欢迎来电咨询或在线留言。">
+    <meta name="keywords" content="不锈钢管,不锈钢钢管,浙江华昇特材,联系方式,咨询">
+    <!-- 引入CSS样式 -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- 引入Font Awesome图标 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- 头部导航 -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <img src="images/logo-705cf39e.png" alt="浙江华昇特材有限公司">
+                <h1>浙江华昇特材有限公司</h1>
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="index.html">首页</a></li>
+                    <li><a href="about.html">关于我们</a></li>
+                    <li><a href="products.html">产品中心</a></li>
+                    <li><a href="contact.html">联系我们</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- 联系我们内容 -->
+    <section class="section contact">
+        <div class="container">
+            <h2 class="section-title">联系我们</h2>
+            <div class="contact-content" style="justify-content: center;">
+                <div class="contact-info" style="max-width: 600px;">
+                    <h3 style="font-size: 24px; color: #333; margin-bottom: 30px; text-align: center;">公司联系方式</h3>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>公司地址</h4>
+                            <p>浙江省温州市龙湾区永中街道永宁东路118号B418室</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>联系电话</h4>
+                            <p>13989702290</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>电子邮箱</h4>
+                            <p>1007728301@qq.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-qq"></i>
+                        <div>
+                            <h4>QQ号码</h4>
+                            <p>1007728301</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-weixin"></i>
+                        <div>
+                            <h4>微信号码</h4>
+                            <p>c1007728301</p>
+                        </div>
+                    </div>
+                    <div style="margin-top: 40px;">
+                        <h4 style="font-size: 18px; color: #333; margin-bottom: 20px; text-align: center;">微信扫码咨询</h4>
+                        <div style="text-align: center;">
+                            <img src="images/wechat-e3e95434.png" alt="微信二维码" style="width: 200px; height: 200px;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 地图 -->
+    <!-- <section class="section" style="padding: 0; margin-bottom: 60px;">
+        <div style="width: 100%; height: 400px; background-color: #f0f0f0; display: flex; align-items: center; justify-content: center;">
+            <div style="text-align: center; color: #666;">
+                <i class="fas fa-map-marker-alt" style="font-size: 48px; margin-bottom: 20px;"></i>
+                <h3 style="font-size: 20px; margin-bottom: 10px;">公司位置地图</h3>
+                <p>浙江省温州市龙湾区永中街道永宁东路118号B418室</p>
+                <p style="margin-top: 20px;">注：此处为示意地图，实际使用时可嵌入百度地图或高德地图</p>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- 页脚容器 -->
+    <div id="footer-container"></div>
+
+    <!-- 引入JavaScript -->
+    <script src="js/script.js"></script>
+    <script>
+        // 动态加载页脚
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer-container').innerHTML = data;
+            });
+    </script>
+</body>
+</html>
